@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort or Filter Your Recipes"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_semi_bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your filter or sort option:"
+        android:textColor="@color/gray2"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Sort Options -->
+    <RadioGroup
+        android:id="@+id/sort_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/sort_by_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sort by Rating" />
+
+        <RadioButton
+            android:id="@+id/sort_by_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sort by Category" />
+
+        <RadioButton
+            android:id="@+id/sort_by_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sort by Cooking Time" />
+    </RadioGroup>
+
+    <!-- Apply and Cancel Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/apply_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+</LinearLayout>
