@@ -1,0 +1,312 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_back"
+                app:tint="@color/black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btn_more"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="20dp"
+                android:rotation="90"
+                android:src="@drawable/ic_more"
+                app:tint="@color/black" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginHorizontal="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_recipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample_recipe_image" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/bg_rating"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_star_icon"
+                        app:tint="@color/secondary100" />
+
+                    <TextView
+                        android:id="@+id/recipeRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="4.0"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="4dp"
+                        android:src="@drawable/ic_time"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/recipeMakingTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="20 min"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/saveRecipeIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/save_button_bg"
+                        android:padding="4dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/redsave"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="18dp"
+            android:paddingTop="12dp"
+            android:weightSum="1">
+
+            <!-- Recipe Title -->
+            <TextView
+                android:id="@+id/recipeTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="Spicy Chicken Burger with French Fries"
+                android:textColor="@color/black"
+                android:layout_marginStart="4dp"
+                android:gravity="start"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- Like Section (Button + Count) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/recipeLikeButton"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/red_heart" />
+
+                <TextView
+                    android:id="@+id/likeCountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="6dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="18dp">
+
+            <TextView
+                android:id="@+id/recipeCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_category_chip"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="Italian"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/recipeSubCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_subcategory_chip"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="Dinner • Non-Veg"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="18dp"
+            android:paddingTop="8dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="2dp"
+                app:cardBackgroundColor="@color/secondary40"
+                app:cardCornerRadius="24dp">
+
+                <ImageView
+                    android:id="@+id/recipeAuthorImage"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_image"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_image" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/recipeAuthorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Laura Wilson"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/authorFollowButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary100"
+                android:text="Follow"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="18dp"
+            android:paddingTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_ingredient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/primary100"
+                android:text="Ingredient"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:cornerRadius="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_procedure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:text="Procedure"
+                android:textColor="@color/gray1"
+                android:textSize="14sp"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+
+        <!-- Ingredient List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="18dp" />
+
+        <!-- Procedure List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_procedures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="18dp" />
+
+    </LinearLayout>
+</ScrollView>
