@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Neutral Colors -->
+    <color name="black">#FF000000</color>
+    <color name="gray1">#FF484848</color>
+    <color name="gray2">#FF797979</color>
+    <color name="gray3">#FFA5A5A5</color>
+    <color name="gray4">#FFD9D9D9</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#E9ECEF</color>
+    <color name="cardBackground">#DADADA</color>
+
+    <!-- Primary Colors -->
+    <color name="primary100">#FF129575</color>
+    <color name="primary80">#FF71B1A1</color>
+    <color name="primary60">#FFAFD3CA</color>
+    <color name="primary40">#FFDBEBE7</color>
+    <color name="primary20">#FFF6FAF9</color>
+
+    <!-- Secondary Colors -->
+    <color name="secondary100">#FFFF9C00</color>
+    <color name="secondary80">#FFFFAF4A</color>
+    <color name="secondary60">#FFFFB44D</color>
+    <color name="secondary40">#FFFFCB80</color>
+    <color name="secondary20">#FFFFE1B3</color>
+
+    <!-- Rating Color -->
+    <color name="rating">#FFFFA030</color>
+
+    <!-- Warning Colors -->
+    <color name="warning100">#FFE84B4B</color>
+    <color name="warning80">#FFF9D6E0</color>
+
+    <!-- Success Color -->
+    <color name="success">#FF71B307</color>
+</resources>

@@ -1,0 +1,26 @@
+<resources>
+    <style name="CustomButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/primary100</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+
+    <style name="CategorySelectedStyle" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/primary100</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+
+    <style name="CategoryUnSelectedStyle" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+
+    <style name="ShapeAppearance.FAB.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">35%</item>
+    </style>
+
+    <style name="RatingBarTheme" parent="Theme.Material3.DayNight">
+        <item name="colorControlActivated">#FFD700</item>
+    </style>
+
+</resources>
