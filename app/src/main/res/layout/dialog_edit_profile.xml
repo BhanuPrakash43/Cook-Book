@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editProfession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Profession"
+        android:padding="12dp"
+        android:inputType="textCapWords"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray2"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/edittext_background" />
+
+    <EditText
+        android:id="@+id/editBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Bio"
+        android:padding="12dp"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:gravity="top|start"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray2"
+        android:background="@drawable/edittext_background" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUpdateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Update Profile"
+        android:textAllCaps="false"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="12dp"
+        app:cornerRadius="12dp"
+        android:backgroundTint="@color/primary100"
+        android:textColor="@android:color/white" />
+</LinearLayout>
