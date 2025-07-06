@@ -41,7 +41,7 @@ A feature-rich Android recipe app where users can discover, create, save, and ma
 ## Setup
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/BhanuPrakash43/Cook-Book.git
+    git clone https://github.com/bhanuprakashh1/Cook-Book.git
     cd Cook-Book
     ```
 
